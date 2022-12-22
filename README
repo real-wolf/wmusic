@@ -1,0 +1,41 @@
+wmusic
+by Hadess <hadess@hadess.net>
+previously maintained by John <john+wmusic@jtan.com>
+now maintained by the Window Maker Team <wmaker-dev@googlegroups.com>
+https://dockapps.net/wmusic
+
+wmusic is a dockapp that remote-controls MPRIS-compatible media players. Here
+is a list of the features:
+
+- VCR style controls including fast rewind and fast forward
+- Time and Playlist position display
+- Super stylee rotating arrow
+
+- AfterStep users, add this line to your ~/GNUstep/Library/AfterStep/wharf:
+	*Wharf wmusic - Swallow "wmusic" wmusic -w &
+- Sawfish users, grab Tiger-T's DockMill theme, and apply it to the running
+  dockapp with the -w flag on. See the theme's README for more details.
+  (http://sawmill.sourceforge.net/themes.org/current/DockMill.tar.gz)
+- KDE users can use the "Dock Application Bar" to dock wmusic, don't forget
+  the -w flag to launch wmusic. Right-Click on Kicker, then pick:
+  Add->Extension->Dock Application Bar
+
+Building
+--------
+
+Requirements:
+	- libdockapp (https://www.dockapps.net/libdockapp)
+	- playerctl (https://github.com/acrisci/playerctl)
+	- an MPRIS-compatible media player (most of them)
+
+Simply type:
+    ./configure
+    make
+    sudo make install
+
+Copyright
+---------
+
+Plain and simple GPL version 2.0, see COPYING for more infos
+- based on design work of Antoine Nulle and Martjin Pieterse
+- double-click code from WMpop by Jérôme SAUTRET (jerome@linuxfan.com)
