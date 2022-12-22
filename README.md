@@ -7,11 +7,13 @@ Requirements:
 	- an MPRIS-compatible media player (most of them)
 
 Build from inside src:
+
     ./configure
     make
     sudo make install
     
 Running:
+
     $ wmusic
     
 should build and run on any modern system (tested on fedora 37)
