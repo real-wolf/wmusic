@@ -6,7 +6,7 @@ Requirements:
 	- playerctl (https://github.com/acrisci/playerctl)
 	- an MPRIS-compatible media player (most of them)
 
-Build from inside src:
+Building:
 
     ./configure
     make
